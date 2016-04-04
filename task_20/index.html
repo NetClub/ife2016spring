@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<style>
+	
+	.container {
+		text-align: center;
+	}
+
+	input[type*="textarea"] {
+		width: 200px;
+	}
+
+	ul {
+		margin-top: 50px;
+		display: -webkit-flex;
+		justify-content: center;
+	}
+
+	ul li {
+		width: 70px;
+		height: 40px;
+		line-height: 40px;
+		margin-right: 20px;
+		list-style: none;
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		font-weight: bolder;
+		background-color: #03A9F4;	
+	}
+
+</style>
+<body>
+	<div class="container">
+		<input type="textarea" id="textarea">
+		<button id="Lin">左侧入</button>
+		<button id="Rin">右侧入</button>
+		<button id="Lout">左侧出</button>
+		<button id="Rout">左侧出</button>
+		<input type="text" placeholder="请输入查询内容" id="scon">
+		<button id="search">查询</button>
+	</div>
+
+	<ul id="box"></ul>
+	<script src="task.js"></script>
+</body>
+</html>
