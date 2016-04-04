@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+
+		.container {
+			width: 400px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		ul {
+			margin-top: 20px;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			min-height: 40px;
+		}
+
+		li {
+			width: 70px;
+			height: 40px;
+			line-height: 40px;
+			margin-right: 20px;
+			list-style: none;
+			text-align: center;
+			color: white;
+			font-size: 20px;
+			font-weight: bolder;
+			background-color: #03A9F4;	
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<input type="text" placeholder="tag" id="tag">
+			<ul id="tag-box"><li>1</li>
+			</ul>			
+		</div>
+
+		<div>
+			<input type="textarea" id="textarea">
+			<button id="insert">确认兴趣爱好</button>
+			<ul id="hobby-box">
+				<li>2</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="task.js"></script>
+</body>
+</html>
