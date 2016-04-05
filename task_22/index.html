@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		div {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border: 1px solid black;
+			background-color: white;
+		}
+
+		.one {
+			width: 700px;
+			height: 500px;
+		}
+
+		.two {
+			width: 320px;
+			height: 450px;
+		}
+
+		.three {
+			width: 120px;
+			height: 300px;
+		}
+
+		.one {
+			margin-bottom: 20px;
+		}
+
+
+
+	</style>
+	<div class="one">
+		<div class="two">
+			<div class="three"></div>
+			<div class="three"></div>
+		</div>
+		<div class="two">
+			<div class="three"></div>
+			<div class="three"></div>
+		</div>
+	</div>
+
+	<input type="button" value="前序遍历" id="preOrder">
+	<input type="button" value="中序遍历" id="inOrder">
+	<input type="button" value="后序遍历" id="postOrder">
+	<script src="test.js"></script>
+</body>
+</html>
