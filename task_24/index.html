@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            background-color: white;
+            padding: 2px;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        .control {
+            position: relative;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="root"> root
+        <div>China
+            <div>上海</div>
+            <div>北京</div>
+            <div>江苏
+                <div>苏州</div>
+                <div>徐州
+                    <div id="xx">沛县</div>
+                    <div>睢宁
+                        <div>壮壮</div>
+                    </div>
+                    <div>贾汪</div>
+                </div>
+            </div>
+        </div>
+
+        <div>Koren
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <div>Japan
+            <div>おおさか</div>
+            <div>とうきょう</div>
+            <div>きょうと</div>
+        </div>
+    </div>
+
+    <div class="control">
+        <input type="button" value="深度遍历" id="dfs">
+        <input type="button" value="广度遍历" id="bfs">
+        <input type="text" id="text">
+        <input type="button" id="dfs_s" value="深度优先查找">
+        <input type="button" id="bfs_s" value="广度优先查找">
+        <input type="text" id="ctext">
+        <input type="button" id="insert" value="插入">
+        <input type="button" id="dele" value="删除">
+    </div>
+    <script src="task.js"></script>
+</body>
+
+</html>
